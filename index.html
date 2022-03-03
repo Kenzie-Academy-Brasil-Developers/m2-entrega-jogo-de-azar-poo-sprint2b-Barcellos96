@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Pedra, Papel ou Tesoura</title>
 </head>
+
 <body>
-  <!-- Escreva seu código aqui -->
+
+  <header>
+    <h1>JOKENPO</h1>
+  </header>
+
+  <button id="abrir-modal" class="abrir-modal">CONHEÇA AS REGRAS CLICANDO AQUI</button>
+
+  <div id="modalId" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>REGRAS JOKENPO</h2>
+      </div>
+      <div class="modal-body">
+        <p><strong>Para jogar JOKENPO:</strong> <br /><br /> 1.Escolha seu nome <br /><br /> 2.Selecione entre pedra, papel ou tesoura
+          <br /><br /> 3.Qual escolha ganha:<br> - papel ganha de pedra <br /> - pedra ganha de tesoura <br /> - tesoura
+          ganha de papel <br /><br /> 4.Confirme sua escolha
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button id="fechar-modal" class="fechar-modal"> IR PARA O JOGO </button>
+      </div>
+    </div>
+  </div>
+
+  <form>
+    <div class="div-form">
+      <input type="text" id="jogador" name="nome" placeholder="digite seu nome">
+      <button id="btnJogar"> JOGAR </button>
+    </div>
+
+    <section id="mostra-jogador">
+    </section>
+  </form>
+
+  <div class="section-jogo">
+    <button id="pedra" name="pedra">PEDRA</button>
+    <button id="papel" name="papel">PAPEL</button>
+    <button id="tesoura" name="tesoura">TESOURA</button>
+  </div>
+
+  <h2 class="voce"> VOCÊ ESCOLHEU</h2>
+
+  <div class="linha"></div>
+
+  <h2 class="computador"> COMPUTADOR ESCOLHEU</h2>
+
+  <div class="section-jogada">
+    <section class="jogada-player" id="mostra-jogada">
+    </section>
+    <button id="confirmar">CONFIRMAR ESCOLHA</button>
+  </div>
+
+  <div class="section-computador">
+    <section id="mostra-computador">
+    </section>
+  </div>
+
+  <h1 id="vencedor" class="vencedor"></h1>
+
+
+
+  <script type="module" src="./src/interceptadores.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,280 @@
+body{
+    margin: 0 auto;
+    background-color: white ;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+}
+
+.abrir-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: black;
+    width: 300px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+}
+.abrir-modal:hover{
+    color: brown;
+}
+
+.modal{
+    background-color: #000;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    display: none;
+}
+
+.modal-content{
+    margin: 0 auto;
+    margin-top: 5%;
+    opacity: 1;
+    max-width: 600px;
+    background-color: #d6d6d6;
+    padding: 0px;
+    box-shadow: 0 0 2px #fff;
+}
+
+.modal-header, .modal-body, .modal-footer{
+    padding: 5px;
+}
+
+.modal-header h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-header{
+    background-color: brown;
+
+}
+.modal-footer{
+    
+    background-color: brown;
+}
+
+.fechar-modal{
+    display: flex;
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.fechar-modal:hover{
+    background-color: white ;
+    border: 2px solid white;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-form input{
+    width: 200px;
+    height: 20px;
+}
+
+.section-jogo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    cursor: pointer;
+    width: 120px;
+    height: 25px;
+    
+}
+
+.section-jogo button{
+    border: none;
+}
+.section-jogo button:hover{
+    background-color: beige;
+    border: none;
+}
+
+.section-jogo button:focus{
+    background-color: bisque;
+    border: none;
+}
+
+.voce{
+    display: flex;
+    float: left;
+    width: 50vw;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: brown;
+}
+
+.linha{
+    display: flex;
+    position:absolute;
+    margin-left: 50vw;
+    margin-right: 52vw;
+    height: 15%;
+    width: 1px;
+    border-right: 1px solid brown;
+}
+
+.computador{
+    display: flex;
+    float: right;
+    width: 50vw;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: brown;
+}
+
+.section-jogada{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+    height: 60px;
+    width: 50vw;
+    justify-content: center;
+}
+
+.section-jogada button {
+    height: 20px;
+    width: 200px;
+}
+.section-jogada button:hover{
+    background-color: green;
+}
+.section-jogada button:focus{
+    border: 1px solid white;
+    background-color: bisque;
+}
+
+.section-computador{
+    display: flex;
+    float: right;
+    width: 50%;
+    justify-content: center;    
+}
+
+.vencedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    width: 100vw;
+    height: 10vh;
+
+    font-size: 100px;
+    color:brown;
+}
+
+
+@media(max-width: 1000px){
+    .vencedor{
+        margin-top: 15%;
+        font-size: 50px;
+    }
+
+    .voce, .computador{
+        font-size: 20px;
+    }
+
+    .linha{
+        height: 12%;
+    }
+
+    .section-jogada button {
+        width: 180px;
+        height: 30px;
+    }
+
+}
+
+@media(max-width: 900px){
+    .vencedor{
+        margin-top: 20%;
+        font-size: 25px;
+    }
+
+    .voce, .computador{
+        font-size: 18px;
+    }
+
+    .linha{
+        height: 11%;
+    }
+    .section-jogada button {
+        width: 160px;
+        height: 30px;
+        font-size: 12px
+    }
+}
+
+@media(max-width: 800px){
+    .vencedor{
+        margin-top: 17%;
+        font-size: 15px;
+    }
+
+    .voce, .computador{
+        font-size: 16px;
+    }
+
+    .linha{
+        height: 10%;
+    }
+
+    .section-jogada button {
+        width: 140px;
+        height: 20px;
+        font-size: 11px
+    }
+}
+
+@media(max-width: 700px){
+    .vencedor{
+        margin-top: 15%;
+        font-size: 15px;
+    }
+
+    .voce, .computador{
+        font-size: 14px;
+    }
+
+    .linha{
+        height: 9%;
+    }
+
+    .section-jogada button {
+        width: 120px;
+        height: 20px;
+        font-size: 9px;
+    }
+}
+
+
+
